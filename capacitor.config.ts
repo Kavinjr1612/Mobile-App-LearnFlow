@@ -25,9 +25,9 @@ const config: CapacitorConfig = {
       splashImmersive: true,
     },
     StatusBar: {
-      overlaysWebView: true,
-      style: 'light',
-      backgroundColor: '#ffffff',
+      overlaysWebView: false,
+      style: 'dark',
+      backgroundColor: '#1a0f2e',
     },
     Keyboard: {
       resize: 'body',
