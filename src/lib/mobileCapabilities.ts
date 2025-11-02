@@ -75,8 +75,8 @@ export const updateStatusBarForTheme = async () => {
   try {
     const isDark = document.documentElement.classList.contains('dark');
     
-    // Don't overlay webview to prevent white bar issue
-    await StatusBar.setOverlaysWebView({ overlay: false });
+    // Enable edge-to-edge layout, safe-area CSS handles spacing
+    await StatusBar.setOverlaysWebView({ overlay: true });
     
     // Set status bar style based on theme
     await StatusBar.setStyle({ 
